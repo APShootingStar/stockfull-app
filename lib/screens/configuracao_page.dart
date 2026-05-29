@@ -9,14 +9,13 @@ class ConfiguracaoPage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title:
-         Text(
-              "Configurações",
-              style: TextStyle(
-                color: Colors.green[900],
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+        title: Text(
+          "Configurações",
+          style: TextStyle(
+            color: Colors.green[900],
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         backgroundColor: Colors.white,
       ),
       bottomNavigationBar: MenuNav(),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stockfull/screens/produtos_page.dart';
+import 'package:stockfull/screens/home_page.dart';
 
 class RegistroLoja extends StatelessWidget {
   const RegistroLoja({super.key});
@@ -87,7 +87,7 @@ class RegistroLoja extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ProdutosPage()));
+                                builder: (context) => HomePage()));
                       },
                       child: Text(
                         "Adicionar",

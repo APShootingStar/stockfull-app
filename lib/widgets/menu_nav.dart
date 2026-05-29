@@ -10,7 +10,7 @@ class MenuNav extends StatelessWidget {
         currentIndex: menubar,
         onTap: (value) {
           menubar = value; 
-          Navigator.pushReplacement(
+          Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => telas[value]),
           );

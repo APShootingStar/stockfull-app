@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stockfull/screens/cadastro_page.dart';
-import 'package:stockfull/screens/produtos_page.dart';
+import 'package:stockfull/screens/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -55,7 +55,7 @@ class LoginPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => ProdutosPage())));
+                          builder: ((context) => HomePage())));
                 },
                 child: Text(
                   "Entrar",
