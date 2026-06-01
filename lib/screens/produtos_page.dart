@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stockfull/widgets/menu_nav.dart';
+
 class ProdutosPage extends StatelessWidget {
   const ProdutosPage({Key? key}) : super(key: key);
 
@@ -8,6 +9,18 @@ class ProdutosPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: MenuNav(),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text(
+          'Produtos',
+          style: TextStyle(
+              color: Colors.green[900],
+              fontWeight: FontWeight.bold,
+              fontSize: 24),
+        ),
+        automaticallyImplyLeading: false,
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -18,13 +31,6 @@ class ProdutosPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             spacing: 19,
             children: [
-              Text(
-                "Produtos",
-                style: TextStyle(
-                    color: Colors.green[900],
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold),
-              ),
               ElevatedButton.icon(
                 icon: Icon(
                   Icons.shopping_bag,
@@ -82,7 +88,7 @@ class ProdutosPage extends StatelessWidget {
                   "Historico de Vendas",
                   style: TextStyle(
                       color: Colors.green[900],
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ),

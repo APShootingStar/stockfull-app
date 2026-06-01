@@ -10,16 +10,17 @@ class DashboardPage extends StatelessWidget {
       bottomNavigationBar: MenuNav(),
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Center(
-          child: Text(
-            "Dashboard",
-            style: TextStyle(
-              color: Colors.green[900],
-              fontWeight: FontWeight.bold,
-            ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text(
+          "Dashboard",
+          style: TextStyle(
+            fontSize: 24,
+            color: Colors.green[900],
+            fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.white,
+      automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Column(

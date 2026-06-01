@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:stockfull/screens/registro_loja_page.dart';
 import 'package:stockfull/widgets/menu_nav.dart';
+
 class ConfiguracaoPage extends StatelessWidget {
   const ConfiguracaoPage({super.key});
 
@@ -45,8 +47,7 @@ class ConfiguracaoPage extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        icon: const Icon(Icons.edit, 
-                        color: Colors.grey),
+                        icon: const Icon(Icons.edit, color: Colors.grey),
                         onPressed: () {},
                       ),
                     ],
@@ -62,9 +63,8 @@ class ConfiguracaoPage extends StatelessWidget {
                           children: [
                             Text(
                               "Email: usuario1@gmail.com",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                             ),
                             Divider(
                                 color: Colors.white,
@@ -86,9 +86,8 @@ class ConfiguracaoPage extends StatelessWidget {
                           children: [
                             Text(
                               "Contato: 543666555",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                             ),
                             Divider(
                                 color: Colors.white,
@@ -110,9 +109,8 @@ class ConfiguracaoPage extends StatelessWidget {
                           children: [
                             Text(
                               "CNPJ: 57575777-8990",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                             ),
                             Divider(
                                 color: Colors.white,
@@ -126,9 +124,7 @@ class ConfiguracaoPage extends StatelessWidget {
                   SizedBox(height: 20),
                   Row(
                     children: [
-                      Icon(Icons.store,
-                       color: Colors.white,
-                       size: 30),
+                      Icon(Icons.store, color: Colors.white, size: 30),
                       SizedBox(width: 15),
                       Expanded(
                         child: Column(
@@ -136,9 +132,8 @@ class ConfiguracaoPage extends StatelessWidget {
                           children: [
                             Text(
                               "Nome do estabelecimento",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                             ),
                             Divider(
                                 color: Colors.white,
@@ -157,9 +152,14 @@ class ConfiguracaoPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => RegistroLoja()));
+                  },
                   child: Text(
-                    "Adicionar nova loja",
+                    "Adicionar Nova Loja",
                     style: TextStyle(fontSize: 20),
                   ),
                   style: ElevatedButton.styleFrom(
